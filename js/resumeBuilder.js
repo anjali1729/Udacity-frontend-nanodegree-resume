@@ -33,6 +33,7 @@ bio.display = function(){
 	var formattedBlog = HTMLblog.replace("%data%",bio.blog);
 	var formattedContacts = formattedMobile + formattedEmail + formattedGithub + formattedTwitter + formattedLocation + formattedBlog;
 	$("#topContacts").append(formattedContacts);
+	$("#footerContacts").append(formattedContacts);
 	//generalinfo
 	var formattedBioPic = HTMLbioPic.replace("%data%",bio.biopic);
 	$("#header").append(formattedBioPic);
